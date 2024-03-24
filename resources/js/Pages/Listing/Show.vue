@@ -9,6 +9,7 @@
       </div>
     </Box>
     <EmptyState v-else class="md:col-span-7 flex items-center">No images</EmptyState>
+
     <div class="md:col-span-5 flex flex-col gap-4">
       <Box>
         <template #header>
@@ -89,8 +90,6 @@ import { usePage } from '@inertiajs/inertia-vue3'
 import { computed } from 'vue'
 import OfferMade from './Show/Components/OfferMade.vue'
 import EmptyState from '@/Components/UI/EmptyState.vue'
-
-
 
 const interestRate = ref(2.5)
 const duration = ref(25)

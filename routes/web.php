@@ -1,18 +1,17 @@
 <?php
 
 use App\Http\Controllers\AuthController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ListingController;
-use App\Http\Controllers\UserAccountController;
-use App\Http\Controllers\RealtorListingController;
-use App\Http\Controllers\RealtorListingImageController;
 use App\Http\Controllers\ListingOfferController;
-use App\Http\Controllers\RealtorListingAcceptOfferController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\NotificationSeenController;
+use App\Http\Controllers\RealtorListingAcceptOfferController;
+use App\Http\Controllers\RealtorListingController;
+use App\Http\Controllers\RealtorListingImageController;
+use App\Http\Controllers\UserAccountController;
 use Illuminate\Notifications\Events\NotificationSent;
-
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +43,6 @@ Route::put(
     'notification/{notification}/seen',
     NotificationSeenController::class
 )->middleware('auth')->name('notification.seen');
-
 
 Route::get('login', [AuthController::class, 'create'])
     ->name('login');

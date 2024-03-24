@@ -67,7 +67,6 @@
             </Link>
           </div>
 
-          
           <div class="mt-2">
             <Link
               :href="route('realtor.listing.show', { listing: listing.id })"
@@ -81,6 +80,7 @@
     </Box>
   </section>
   <EmptyState v-else>No listings yet</EmptyState>
+
   <section v-if="listings.data.length" class="w-full flex justify-center mt-4 mb-4">
     <Pagination :links="listings.links" />
   </section>
@@ -91,11 +91,10 @@ import ListingAddress from '@/Components/ListingAddress.vue'
 import ListingSpace from '@/Components/ListingSpace.vue'
 import Price from '@/Components/Price.vue'
 import Box from '@/Components/UI/Box.vue'
+import EmptyState from '@/Components/UI/EmptyState.vue'
 import Pagination from '@/Components/UI/Pagination.vue'
 import RealtorFilters from '@/Pages/Realtor/Index/Components/RealtorFilters.vue'
 import { Link } from '@inertiajs/inertia-vue3'
-import EmptyState from '@/Components/UI/EmptyState.vue'
-
 
 defineProps({
   listings: Object,
