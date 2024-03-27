@@ -32,10 +32,10 @@ class AuthController extends Controller
     public function destroy(Request $request)
     {
         Auth::logout();
-
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('listing.index');
+        // return redirect()->route('login');
+        return redirect()->route('login');
     }
 }
