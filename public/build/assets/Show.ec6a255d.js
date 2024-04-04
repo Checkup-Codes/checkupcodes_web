@@ -1,0 +1,1 @@
+import{o as e,c as a,e as t,f as o,b as s,F as r,a as n,L as c,h as _}from"./app.039d49ba.js";/* empty css            */const i=n("div",null,"Show",-1),l=_("Main Page"),p={__name:"Show",setup(d){return(h,u)=>(e(),a(r,null,[i,t(s(c),{href:"/"},{default:o(()=>[l]),_:1})],64))}};export{p as default};

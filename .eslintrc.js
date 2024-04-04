@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   extends: ['eslint:recommended', 'plugin:vue/vue3-recommended'],
   parserOptions: {
@@ -8,6 +9,9 @@ module.exports = {
     amd: true,
     browser: true,
     es6: true,
+  },
+  globals: {
+    route: 'readonly',
   },
   rules: {
     indent: ['error', 2],

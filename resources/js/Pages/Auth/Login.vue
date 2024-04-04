@@ -1,4 +1,4 @@
-<template>
+""<template>
   <form @submit.prevent="login">
     <div class="w-1/2 mx-auto">
       <div>
