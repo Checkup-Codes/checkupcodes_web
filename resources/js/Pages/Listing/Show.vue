@@ -107,6 +107,6 @@ const { monthlyPayment, totalPaid, totalInterest } = useMonthlyPayment(
 
 const page = usePage()
 const user = computed(
-  () => page.props.value.user,
+  () => page.props.user,
 )
 </script>
