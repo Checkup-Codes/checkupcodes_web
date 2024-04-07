@@ -53,7 +53,7 @@
 <script setup>
 import { computed } from 'vue'
 import Box from '@/Components/UI/Box.vue'
-import { Link, useForm } from '@inertiajs/inertia-vue3'
+import { Link, useForm } from '@inertiajs/vue3'
 import { router } from '@inertiajs/vue3'
 import NProgress from 'nprogress'
 
