@@ -76,3 +76,8 @@ Route::prefix('realtor')
         Route::resource('listing.image', RealtorListingImageController::class)
             ->only(['create', 'store', 'destroy']);
     });
+
+Route::get('generate', function () {
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+    echo 'ok';
+});
